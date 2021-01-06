@@ -42,11 +42,11 @@ The following steps should be performed on all database nodes db1, db2 and db3.
 Responses to those questions with the following answers:
 
 Pick 2 - Create a new admin account for InnoDB cluster with minimal required grants
-Account Name: **clusteradmin@%**
-Password: **mysecret#!**
-Confirm password: **mysecret#!**
-Do you want to perform the required configuration changes?: **y**
-Do you want to restart the instance after configuring it?: **y**
+Account Name: **clusteradmin@%**  
+Password: **mysecret#!**  
+Confirm password: **mysecret#!**  
+Do you want to perform the required configuration changes?: **y**  
+Do you want to restart the instance after configuring it?: **y**  
 
 #### Creating the cluster
 On db1, connect as cluster admin from MySQL Shell:
