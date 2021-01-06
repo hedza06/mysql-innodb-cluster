@@ -104,7 +104,7 @@ In a replica set concept, one node will provide no fault tolerance. Minimum of 3
  
 Now add the second node (from db1 node), db2 and accept the default recovery method, "Clone":
 ```
-MySQL|db1:3306 ssl|JS> cluster.addInstance('logateadmin@db2:3306');
+MySQL|db1:3306 ssl|JS> cluster.addInstance('clusteradmin@db2:3306');
 ```
 The following screenshot shows the initialization progress of db2 after we executed the above command. 
 The syncing operation is performed automatically by MySQL:
@@ -152,7 +152,7 @@ cluster for fault tolerance.
 
 Add the last node, db3 and accept the default recovery method, "Clone" similar to db2:
 ```
-MySQL|db1:3306 ssl|JS> cluster.addInstance('logateadmin@db3:3306');
+MySQL|db1:3306 ssl|JS> cluster.addInstance('clusteradmin@db3:3306');
 ```
 The following screenshot shows the initialization progress of db3 after we executed the above command. 
 The syncing operation is performed automatically by MySQL:
@@ -246,15 +246,15 @@ Switching to SQL mode... Commands end with ;
 ```
 Create a database:
 ```
-MySQL|localhost:3306 ssl|SQL> CREATE DATABASE logate_test;
+MySQL|localhost:3306 ssl|SQL> CREATE DATABASE db_test;
 ```
 Create a database user:
 ```
-MySQL|localhost:3306 ssl|SQL> CREATE USER logateuser@'%' IDENTIFIED BY 'password';
+MySQL|localhost:3306 ssl|SQL> CREATE USER db_user@'%' IDENTIFIED BY 'password';
 ```
 Grant the user to the database:
 ```
-MySQL|localhost:3306 ssl|SQL> GRANT ALL PRIVILEGES ON logate_test.* TO logatetest@'%';
+MySQL|localhost:3306 ssl|SQL> GRANT ALL PRIVILEGES ON db_test.* TO db_user@'%';
 ```
 Now our database and user is ready.
 
