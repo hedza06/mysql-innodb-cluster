@@ -14,6 +14,9 @@ To do this here are the steps:
 5. yum install mysql-router (only on router server)
 6. Configure and secure MySQL servers
 
+### Architecture Preview
+![alt text](innodb.png)
+
 ### Configuration of DB nodes
 In this section it will be explained how to create DB cluster, add new instances to existing 
 cluster and start group replication.
