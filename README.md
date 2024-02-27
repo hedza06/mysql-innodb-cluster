@@ -268,5 +268,4 @@ Now our database and user is ready.
 ### Author
 Heril Muratovic  
 Software Engineer  
-Logate D.O.O  
 All Rights Reserved  
